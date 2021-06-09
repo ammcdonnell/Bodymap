@@ -5,11 +5,12 @@ text-align: center;
 
 body{
 background-color: black;
+text-align:center;
 }
 
 .fullbody {
 margin-left: 250px;
 margin-right: auto;
 width: auto;
-height: 500px;
+height: 800px;
 }
