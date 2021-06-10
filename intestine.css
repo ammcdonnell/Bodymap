@@ -1,36 +1,41 @@
-.intestine-img{
-  position:absolute;
-  top:0;
-  left:0;
-  height: 40px;
-  width: 40px;
-  display: block;
+
+.intestine{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -25px
+}
+
+.intestine img{
+  width: 100px;
   animation: fallingintestine 6s linear infinite;
 }
 
-.intestine-img:nth-child(1){
+.intestine img:nth-child(1){
   left: 86%;
   width: 40px;
   height: 40px;
   animation-delay: 0s;
 }
 
-.intestine-img:nth-child(2){
+.intestine img:nth-child(2){
   left: 12%;
-  width: 20px;
-  height: 20px;
+  width: 80px;
+  height: 80px;
   animation-delay: 1.5s;
   animation-duration: 10s;
 }
 
-.intestine-img:nth-child(3){
+.intestine img:nth-child(3){
   left: 72%;
   width: 50px;
   height: 50px;
   animation-delay: 4.5s;
   width: 65px;
 
-}.intestine-img:nth-child(4){
+}.intestine img:nth-child(4){
   left: 72%;
   width: 60px;
   height: 60px;
@@ -38,14 +43,14 @@
   animation-duration: 8s;
 }
 
-.intestine-img:nth-child(5){
+.intestine img:nth-child(5){
   left: 65%;
   width: 40px;
   height: 40px;
   animation-delay: 0s;
 }
 
-.intestine-img:nth-child(6){
+.intestine img:nth-child(6){
   left: 15%;
   width: 70px;
   height: 70px;
