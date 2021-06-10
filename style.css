@@ -1,7 +1,8 @@
 h1{
     text-align: center;
 }
-.item1 { grid-area: header;}
+.item1 { grid-area: header;
+	font-family: 'Patua One', cursive;}
 .item2 { grid-area: menu;}
 .item3 { grid-area: main;}
 .item4 { grid-area: right;}
@@ -12,14 +13,14 @@ h1{
 	  'menu main main main right right'
 	  'menu footer footer footer footer footer';
 	grid-gap: 10px;
-	background-color: #2196F3;
-	padding: 10px;
+	background-color: #dce1e6;
+	padding: 43px;
   }
-  
+
   .grid-container > div {
 	background-color: rgba(255, 255, 255, 0.8);
 	text-align: center;
-	padding: 20px 0;
+	padding: 40px 0;
 	font-size: 30px;
   }
 #container {
@@ -37,3 +38,11 @@ h1{
     text-align: center;
 }
 
+.img-map{
+	height: 350px;
+	width: 350px;
+}
+
+.header{
+	margin-right: 415px;
+}

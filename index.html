@@ -5,23 +5,26 @@
 <title>Map</title>
 
 <link rel="stylesheet" href="style.css">
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="grid-container">
-    <div class="item1">Starting from Map to Body Map</div>
+    <div class="item1"><div class="header">Starting from Map to Body Map</div>
+      </div>
+
     <div class="item2"><div class = "link">
       <a href="bodymap.html"> Map</a>
       </div></div>
     <div class="item3"><div id="container">
       <video autoplay="true" id="videoElement">
-    
+
       </video>
     </div>
     <script>
     var video = document.querySelector("#videoElement");
-    
+
     if (navigator.mediaDevices.getUserMedia) {
       navigator.mediaDevices.getUserMedia({ video: true })
         .then(function (stream) {
@@ -31,9 +34,13 @@
           console.log("Something went wrong!");
         });
     }
-    </script></div>  
-    <div class="item4">Right</div>
+    </script></div>
+    <div class="item4">
+      <img src = "mapdefined.PNG" height="410px" width="435px">
   </div>
+
+
+
 
 
 </body>
