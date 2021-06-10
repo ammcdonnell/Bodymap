@@ -2,7 +2,7 @@ body{
     background-color: rgba(0, 0, 0, 0);
   }
   
-  .heart{
+  .organ{
     width: 100%;
     display: flex;
     align-items: center;
@@ -10,12 +10,12 @@ body{
     position: absolute;
   }
   
-  .heart img{
+  .organ img{
     width: 100px;
-    animation: fallingintestine 6s linear infinite;
+    animation: fallingorgan 6s linear infinite;
   }
   
-  .heart img:nth-child(1){
+  .organ img:nth-child(1){
     
     width: 40px;
     height: 40px;
@@ -23,7 +23,7 @@ body{
     animation-duration: 5s;
   }
   
-  .heart img:nth-child(2){
+  .organ img:nth-child(2){
     
     width: 80px;
     height: 80px;
@@ -31,7 +31,7 @@ body{
     animation-duration: 10s;
   }
   
-  .heart img:nth-child(3){
+  .organ img:nth-child(3){
     
     width: 50px;
     height: 50px;
@@ -39,14 +39,14 @@ body{
     animation-duration: 3s;
     width: 65px;
   
-  }.heart img:nth-child(4){
+  }.organ img:nth-child(4){
     width: 30px;
     height: 30px;
     animation-delay: 0s;
     animation-duration: 8s;
   }
   
-  .heart img:nth-child(5){
+  .organ img:nth-child(5){
    
     width: 40px;
     height: 40px;
@@ -54,14 +54,14 @@ body{
     animation-duration: 7s;
   }
   
-  .heartimg:nth-child(6){
+  .organimg:nth-child(6){
     
     width: 70px;
     height: 70px;
     animation-delay: 3.5s;
   }
   
-  @keyframes fallingintestine{
+  @keyframes fallingorgan{
     0%{
       transform: translateY(0) rotate(0deg);
       opacity:1;
@@ -71,7 +71,7 @@ body{
       opacity :0;
     }
   }
-  .heart-gif{
+  .organ-gif{
     display: flex;
     align-items: center;
     justify-content: space-around;
