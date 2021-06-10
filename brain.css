@@ -7,9 +7,9 @@ h1{
   body{
     background-color: rgb(2, 0, 0);
   }
-.brain {
+.brain{
     width: auto;
-    height: 500 px;
+    height: 500px;
  display: flex;
   align-items: center;
   justify-content: space-around;
