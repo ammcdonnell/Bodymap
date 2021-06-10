@@ -1,0 +1,20 @@
+h1{
+  color: white;
+  text-align: center;
+  font-size: xx-large;
+  }
+  
+  body{
+    background-color: rgb(2, 0, 0);
+  }
+.brain {
+    width: 100%;
+ display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 200px
+}
+.text{
+  color: white;
+}
