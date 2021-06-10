@@ -7,6 +7,72 @@ h1{
   body{
     background-color: rgb(255, 255, 255);
   }
+
+  .brain{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position:absolute;
+
+  }
+  .brain img{
+    width: 50px;
+    animation: fallingbrain 6s linear infinite;
+  }
+
+  .brain img:nth-child(1){
+    
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+    animation-duration: 5s;
+  }
+  
+  .brain img:nth-child(2){
+    
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 10s;
+  }
+  
+  .brain img:nth-child(3){
+    
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+    animation-duration: 3s;
+    width: 65px;
+  
+  }.brain img:nth-child(4){
+    width: 30px;
+    height: 30px;
+    animation-delay: 0s;
+    animation-duration: 8s;
+  }
+  
+  .brain img:nth-child(5){
+   
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+    animation-duration: 7s;
+  }
+  
+  .brain img:nth-child(6){
+    
+    width: 70px;
+    height: 70px;
+    animation-delay: 3.5s;
+  }
+  @keyframes fallingbrain{
+
+    100%{
+      transform:translateY(800px) rotate(360deg);
+      opacity :1;
+    }
+  }
   .brain_vid{
     display: block;
     margin-left: 35%; 
