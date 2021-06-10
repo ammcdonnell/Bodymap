@@ -1,0 +1,74 @@
+body{
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .heart{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+  }
+  
+  .heart img{
+    width: 100px;
+    animation: fallingintestine 6s linear infinite;
+  }
+  
+  .heart img:nth-child(1){
+    left: 86%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+    animation-duration: 5s;
+  }
+  
+  .heart img:nth-child(2){
+    left: 12%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+    animation-duration: 10s;
+  }
+  
+  .heart img:nth-child(3){
+    left: 72%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 0s;
+    animation-duration: 3s;
+    width: 65px;
+  
+  }.heart img:nth-child(4){
+    left: 72%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 8s;
+  }
+  
+  .heart img:nth-child(5){
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+    animation-duration: 7s;
+  }
+  
+  .heartimg:nth-child(6){
+    left: 15%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 3.5s;
+  }
+  
+  @keyframes fallingintestine{
+    0%{
+      transform: translateY(0) rotate(0deg);
+      opacity:1;
+    }
+    100%{
+      transform:translateY(800px) rotate(360deg);
+      opacity :0;
+    }
+  }
