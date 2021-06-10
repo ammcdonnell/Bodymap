@@ -5,16 +5,12 @@ h1{
   }
   
   body{
-    background-color: rgb(2, 0, 0);
+    background-color: rgb(255, 255, 255);
   }
-.brain{
-    width: auto;
-    height: 500px;
- display: flex;
-  align-items: center;
-  justify-content: space-around;
-  position: absolute;
-}
-.text{
-  color: white;
-}
+  .brain_vid{
+    display: block;
+    margin-left: 35%; 
+    margin-right: 100%;
+    width: 30%;
+    height: 400%;
+  }
