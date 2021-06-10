@@ -1,7 +1,9 @@
 body{
     background-color: rgba(0, 0, 0, 0);
   }
-  
+.text-align{
+  text-align: center;
+}
   .organ{
     width: 100%;
     display: flex;
