@@ -9,29 +9,32 @@
 </head>
 
 <body>
-<h1>
-Starting from Map to Body Map
-</h1>
-<div id="container">
-	<video autoplay="true" id="videoElement">
+  <div class="grid-container">
+    <div class="item1">Starting from Map to Body Map</div>
+    <div class="item2"><div class = "link">
+      <a href="bodymap.html"> Map</a>
+      </div></div>
+    <div class="item3"><div id="container">
+      <video autoplay="true" id="videoElement">
+    
+      </video>
+    </div>
+    <script>
+    var video = document.querySelector("#videoElement");
+    
+    if (navigator.mediaDevices.getUserMedia) {
+      navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function (stream) {
+          video.srcObject = stream;
+        })
+        .catch(function (err0r) {
+          console.log("Something went wrong!");
+        });
+    }
+    </script></div>  
+    <div class="item4">Right</div>
+  </div>
 
-	</video>
-</div>
-<script>
-var video = document.querySelector("#videoElement");
 
-if (navigator.mediaDevices.getUserMedia) {
-  navigator.mediaDevices.getUserMedia({ video: true })
-    .then(function (stream) {
-      video.srcObject = stream;
-    })
-    .catch(function (err0r) {
-      console.log("Something went wrong!");
-    });
-}
-</script>
-<div class = "link">
-<a href="bodymap.html"> Map</a>
-</div>
 </body>
 </html>
