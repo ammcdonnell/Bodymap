@@ -1,6 +1,30 @@
 h1{
     text-align: center;
 }
+.item1 { grid-area: header;
+	font-family: 'Patua One', cursive;}
+.item2 { grid-area: menu;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;}
+.item3 { grid-area: main;}
+.item4 { grid-area: right;}
+.grid-container {
+	display: grid;
+	grid-template-areas:
+	  'header header header header header header'
+	  'menu main main main right right'
+	  'menu footer footer footer footer footer';
+	grid-gap: 10px;
+	background-color: #dce1e6;
+	padding: 43px;
+  }
+
+  .grid-container > div {
+	background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	padding: 40px 0;
+	font-size: 30px;
+  }
 #container {
 	margin: 0px auto;
 	width: 700px;
@@ -14,4 +38,15 @@ h1{
 }
 .link{
     text-align: center;
+		text-transform: uppercase;
+		letter-spacing:3px;
+}
+
+.img-map{
+	height: 350px;
+	width: 350px;
+}
+
+.header{
+	margin-right: 415px;
 }

@@ -14,3 +14,28 @@ margin-right: auto;
 width: auto;
 height: 800px;
 }
+
+* {box-sizing: border-box;}
+
+.img-zoom-container {
+  position: relative;
+}
+
+.img-zoom-lens {
+  position: absolute;
+ 
+  border: 0px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 30px;
+  height: 30px;
+}
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  /*set the size of the result div:*/
+  width: 300px;
+  height: 300px;
+  position:absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
