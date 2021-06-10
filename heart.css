@@ -16,7 +16,7 @@ body{
   }
   
   .heart img:nth-child(1){
-    left: 86%;
+    
     width: 40px;
     height: 40px;
     animation-delay: 0s;
@@ -24,7 +24,7 @@ body{
   }
   
   .heart img:nth-child(2){
-    left: 12%;
+    
     width: 80px;
     height: 80px;
     animation-delay: 0s;
@@ -32,7 +32,7 @@ body{
   }
   
   .heart img:nth-child(3){
-    left: 72%;
+    
     width: 50px;
     height: 50px;
     animation-delay: 0s;
@@ -40,15 +40,14 @@ body{
     width: 65px;
   
   }.heart img:nth-child(4){
-    left: 72%;
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     animation-delay: 0s;
     animation-duration: 8s;
   }
   
   .heart img:nth-child(5){
-    left: 65%;
+   
     width: 40px;
     height: 40px;
     animation-delay: 0s;
@@ -56,7 +55,7 @@ body{
   }
   
   .heartimg:nth-child(6){
-    left: 15%;
+    
     width: 70px;
     height: 70px;
     animation-delay: 3.5s;
@@ -72,3 +71,15 @@ body{
       opacity :0;
     }
   }
+  .heart-gif{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 0%;
+  }
+  .text{
+  color: black;
+  text-align: center;
+  font-size: xx-large;
+  }
+  
