@@ -6,76 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href=main.css>
   
-  <script>
-    function imageZoom(imgID, resultID) {
-      var img, lens, result, cx, cy;
-      img = document.getElementById(imgID);
-      result = document.getElementById(resultID);
-    
-      lens = document.createElement("DIV");
-      lens.setAttribute("class", "img-zoom-lens");
-  
-      img.parentElement.insertBefore(lens, img);
-    
-      cx = result.offsetWidth / lens.offsetWidth;
-      cy = result.offsetHeight / lens.offsetHeight;
-      
-      result.style.backgroundImage = "url('" + img.src + "')";
-      result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
-     
-      lens.addEventListener("mousemove", moveLens);
-      img.addEventListener("mousemove", moveLens);
-     
-      lens.addEventListener("touchmove", moveLens);
-      img.addEventListener("touchmove", moveLens);
-      function moveLens(e) {
-        var pos, x, y;
-       
-        e.preventDefault();
-       
-        pos = getCursorPos(e);
-  
-        x = pos.x - (lens.offsetWidth / 2);
-        y = pos.y - (lens.offsetHeight / 2);
-      
-        if (x > img.width - lens.offsetWidth) {x = img.width - lens.offsetWidth;}
-        if (x < 0) {x = 0;}
-        if (y > img.height - lens.offsetHeight) {y = img.height - lens.offsetHeight;}
-        if (y < 0) {y = 0;}
-       
-        lens.style.left = x + "px";
-        lens.style.top = y + "px";
-   
-        result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
-      }
-      function getCursorPos(e) {
-        var a, x = 0, y = 0;
-        e = e || window.event;
-       
-        a = img.getBoundingClientRect();
-       
-        x = e.pageX - a.left;
-        y = e.pageY - a.top;
-     
-        x = x - window.pageXOffset;
-        y = y - window.pageYOffset;
-        return {x : x, y : y};
-      }
-    }
-    </script>
-  
 
   <title>Document</title>
 
 </head>
 <body>
-  <h1>Explore the Human Body!</h1>
+  <h1>Click on the Body Part to See More!</h1>
 
 <div>
   <div class="img-zoom-container">
     
   <img id="myimage" src="fullbody.jpg" class="fullbody" usemap="#body" alt="">
- <img id="myresult" class="img-zoom-result" alt="">
 
 
 <map name="body">
@@ -91,12 +32,17 @@
   <area shape="rectangle" coords="230,280,250,340" alt="largeintestine" href="lintestine.html">
   <area shape="rectangle" coords="190,340,220,388" alt="largeintesting" href= "lintestine.html">
 </map>
-<script>
-  imageZoom("myimage", "myresult");
-  </script> 
+<span>
+<div class="glass">
+
+<img src="glass1.png" alt="glass1" class = "img-bottom" height = "40" width = "30">
+<a href="zoom.html">
+<img src="glass2.png" class="img-top" alt="glass2" height = "40" width = "30">
+</a>
 
 </div>
-
+</span>
+</div>
 
 
 

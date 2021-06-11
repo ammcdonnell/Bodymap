@@ -15,7 +15,33 @@ width: auto;
 height: 800px;
 }
 
+.glass {
+  margin-bottom: 750px;
+  position: relative;
+  display: inline-block;
+}
+.glass .img-bottom{
+  display: inline;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.glass .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.glass:hover .img-top {
+  display: inline;
+}
+.glass:hover .img-bottom{
+  display: none;
+}
 * {box-sizing: border-box;}
+
 
 .img-zoom-container {
   position: relative;
@@ -38,4 +64,12 @@ height: 800px;
   position:absolute;
   margin-left: auto;
   margin-right: auto;
+}
+
+.close{
+  font-size: 28px;
+  margin-left: 140px;
+  margin-top: 380px;
+  position: absolute;
+
 }
